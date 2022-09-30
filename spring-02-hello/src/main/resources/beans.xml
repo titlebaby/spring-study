@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    使用Spring来创建对象，在spring这些部分称为Bean
+        类型 变量名 = new 类型()
+        Hello hello = new Hello()
+        bean = 对象 = new Hello()
+
+
+        id = 变量名
+        class = new 的对象；
+        property = 相当于给对象中的属性赋值
+        => 控制反转
+-->
+    <bean id="hello" class="com.ling.pojo.Hello">
+        <!-- collaborators and configuration for this bean go here -->
+        <property name="str" value="Spring的值"/>
+    </bean>
+
+    <!-- more bean definitions go here -->
+
+</beans>
