@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<!--    <bean id="user" class="com.ling.pojo.User">-->
+<!--&lt;!&ndash;        有参数构造，下标赋值 ，注入属性&ndash;&gt;-->
+<!--       <constructor-arg index="0" value="李四"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="com.ling.pojo.User">-->
+<!--        &lt;!&ndash;        有参数构造，类型赋值 ，注入属性&ndash;&gt;-->
+<!--        <constructor-arg type="java.lang.String" value="李四2"/>-->
+<!--    </bean>-->
+
+    <bean id="user" class="com.ling.pojo.User">
+        <!--        有参数构造，直接通过参数名赋值 ，注入属性-->
+        <constructor-arg name="name" value="李四23"/>
+    </bean>
+
+
+
+
+
+</beans>
