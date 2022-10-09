@@ -22,6 +22,15 @@
     </bean>
 
 
+    <bean id="cat" class="com.ling.pojo.Cat"/>
+    <bean id="dog" class="com.ling.pojo.Dog"/>
+    <!--   byName: 会自动在容器上下文中查找，和自己对象setXXX（dog）方法后面的值对应的beanid==dog -->
+    <!--   byType: 会自动在容器上下文中查找，和自己对象属性类型相同的bean com.ling.pojo.Dog -->
+    <bean id="people" class="com.ling.pojo.People" autowire="byType">
+        <property name="name" value="张三"/>
+    </bean>
+
+
 
 
 
